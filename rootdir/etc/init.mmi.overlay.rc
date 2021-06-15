@@ -97,6 +97,9 @@ service vendor.qrtr-lookup-sh /vendor/bin/init.mmi.qrtr-lookup.sh
 on property:persist.vendor.autotest.loop=1
     start vendor.mmi-autotest-sh
 
+on post-fs
+    mount none /vendor/firmware_mnt/image/bdwlan_hanoip_ipa.bin /vendor/firmware_mnt/image/bdwlan.bin bind
+
 on property:ro.build.type=userdebug
     insmod /vendor/lib/modules/watchdogtest.ko
     setprop persist.vendor.qg.log_level 0
