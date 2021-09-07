@@ -2,6 +2,10 @@
 # Properties for hanoip
 #
 
+# ADB - Early
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.boot.adb_early=1
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.physical.num=5
