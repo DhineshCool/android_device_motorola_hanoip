@@ -15,7 +15,7 @@
 #
 
 PRODUCT_BUILD_SUPER_PARTITION := false
-PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 $(call inherit-product, device/motorola/sm6150-common/common.mk)
