@@ -27,5 +27,8 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/hanoip_defconfig
 
+# LZ4 Compression
+BOARD_RAMDISK_USE_LZ4 := true
+
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
