@@ -26,4 +26,7 @@
     <fraction name="fingerprint_sensor_location_fraction_x">68.5%</fraction>
     <fraction name="fingerprint_sensor_location_fraction_y">29.999996%</fraction>
 
+    <!-- Whether to show Smooth Display feature in Settings Options -->
+    <bool name="config_show_smooth_display">true</bool>
+
 </resources>
