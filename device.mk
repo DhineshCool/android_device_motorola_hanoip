@@ -23,6 +23,9 @@ $(call inherit-product, device/motorola/sm6150-common/common.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/hanoip/hanoip-vendor.mk)
 
+# Use 6-GB dalvik-heap instead
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
 # Properties
 -include $(LOCAL_PATH)/properties.mk
 
