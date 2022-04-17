@@ -27,6 +27,9 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/hanoip_defconfig
 
+#Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
 # LZ4 Compression
 BOARD_RAMDISK_USE_LZ4 := true
 
