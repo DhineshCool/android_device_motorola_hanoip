@@ -22,6 +22,7 @@ DEVICE_PATH := device/motorola/hanoip
 TARGET_SCREEN_DENSITY := 420
 
 # Kernel
+BOARD_BOOT_HEADER_VERSION := 3
 TARGET_KERNEL_CONFIG := vendor/hanoip_defconfig
 
 # Properties
@@ -46,6 +47,7 @@ BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 100663296
 
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
+TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Verified Boot
